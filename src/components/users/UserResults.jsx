@@ -1,11 +1,11 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import UserItem from "./UserItem";
 import GithubContext from "../../context/github/GithubContext";
 export default function UserResults() {
-  const { users, loading, fecthUsers } = useContext(GithubContext);
-  useEffect(() => {
-    fecthUsers();
-  }, []);
+  const { users, loading, searchhUsers } = useContext(GithubContext);
+//   useEffect(() => {
+//     searchUsers();
+//   }, []);
 
   if (!loading) {
     return (

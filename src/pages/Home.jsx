@@ -1,10 +1,12 @@
-import UserResults from "../components/users/UserResults"
+import UserResults from "../components/users/UserResults";
+import UsersSearch from "../components/users/UsersSearch";
 function Home() {
   return (
     <div>
-        <UserResults/>
+      <UsersSearch />
+      <UserResults />
     </div>
-  )
+  );
 }
 
-export default Home
+export default Home;
